@@ -1,31 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1 class="heading">Testimony</h1>
-    <p class="info-text">Double click to see testimony</p>
-    <div class="app" id="app">
-
-      <button class="btn" id="btn">The product is amazing- Sarah M.</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="user hide-details" id="userBox">
+        <img src="C:\Users\USER\Pictures\Saved Pictures\248177078_249242510554043_7547354771282066058_n.jpg" onclick="openinfo()">
+        <div class="info">
+            <h1>Umubyeyi Marie Bienvenue</h1>
+            <p>Working as a Backend Developer </p>
+            <p>From: Kigali, Rwanda</p>
+            <p>phone: +250780577120</p>
+            <p>email: mariebienvenueu@gmail.com</p>
+            <a href="#">Contact with me</a>
+        </div>
+        <div class="close-icon" onclick="closeinfo()"></div>
     </div>
-    <div class="app" id="app">
-        
-  
-        <button class="btn" id="btn"> your product gave me good result- Michael L.</button>
-      </div>
-      <div class="app" id="app">
-        
-        
+    <script>
+        let userBox = document.getElementById("userBox");
 
-        
-        <button class="btn" id="btn"> They don't lies- Alex K.</button>
-      </div>
-    <script src="index.js"></script>
-  </body>
+        function openinfo(){
+            userBox.classList.remove("hide-details");
+
+        }
+        function closeinfo(){
+            userBox.classList.add("hide-details");
+            
+        }
+
+    </script>
+</body>
 </html>
